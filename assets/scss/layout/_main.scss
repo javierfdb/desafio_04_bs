@@ -1,0 +1,162 @@
+@mixin respond-to($width) {
+    @media only screen and (max-width: $width) {
+      @content;
+    }
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    font-weight: 300; 
+}
+
+header {
+  background-color: #28a745;
+  nav {
+    background-color: #28a745;
+    a {
+      color: #fff !important;
+    }
+    img.logo {
+      max-width: 150px;
+      border-radius: 10px;
+    }
+    button.btn {
+      color: #fff;
+    border-color: #000;
+    background-color: #000;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+    }
+    .navbar-toggler {
+      border-color: #fff !important;
+      .navbar-toggler-icon {
+        background-image: url(https://lfi.lfi.cl/Sonda-LP/THIS/desafio_04_bs/assets/images/icon-menu-mob.png);
+     }
+    }
+    
+  }
+}
+
+section.carrusel {
+  img {
+    filter: brightness(.6);
+    @include respond-to(991px) {
+      filter: brightness(.9);
+    }
+  }
+}
+
+section.cards {
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0px;
+    font-size: 34px;
+    color: #28a745;
+    @include respond-to(991px) {
+      font-size: 24px;
+    }
+    span {
+      font-weight: bold;
+      @include respond-to(991px) {
+        display: block;
+        font-size: 28px;
+      }
+    }
+  }
+  .card {
+    a {
+      color: unset;
+      text-decoration: unset;
+    }
+    margin-bottom: 2rem;
+    .card-body {
+      padding-bottom: 0px;
+      hr {
+        margin-top: 2rem;
+      }
+    }
+    .list-group.list-group-flush {
+      display: none;
+    }
+    .card-footer {
+      background-color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border-top: none;
+      span {
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        &:last-child {
+          color: #28a745;
+          font-weight: 500;
+          font-size: 1.4rem;
+        }
+      }
+      
+    }
+    
+  }
+}
+
+section.form {
+  .text-form {
+    h2 {
+      font-weight: bold;
+      @include respond-to(991px) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  form {
+    background-color: #28a745;
+    padding: 2rem;
+    border-radius: 10px;
+    @include respond-to(991px) {
+      padding: 1rem;
+    }
+    .box-input {
+      margin-bottom: 1.5rem;
+    }
+    .box-submit {
+      display: flex;
+      justify-content: center;
+      .btn-cupon{
+        color: #fff;
+        border-color: #000;
+        background-color: #000;
+        min-width: 150px;
+        &:hover {
+          background-color: #fff;
+          color: #000;
+        }
+        }
+    }
+  }
+}
+
+footer {
+  background-color: #28a745;
+  padding: 1rem 0rem;
+  color: #fff;
+  p {
+    margin-bottom: 0px;
+  }
+  figure {
+    margin-bottom: 0px;
+    img {
+      max-width: 150px;
+      border-radius: 10px;
+    }
+  }
+}
+
+
+
+
+

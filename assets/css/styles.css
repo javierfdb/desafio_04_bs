@@ -1,0 +1,192 @@
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  font-weight: 300;
+}
+
+header {
+  background-color: #28a745;
+}
+
+header nav {
+  background-color: #28a745;
+}
+
+header nav a {
+  color: #fff !important;
+}
+
+header nav img.logo {
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+header nav button.btn {
+  color: #fff;
+  border-color: #000;
+  background-color: #000;
+}
+
+header nav button.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+header nav .navbar-toggler {
+  border-color: #fff !important;
+}
+
+header nav .navbar-toggler .navbar-toggler-icon {
+  background-image: url(https://lfi.lfi.cl/Sonda-LP/THIS/desafio_04_bs/assets/images/icon-menu-mob.png);
+}
+
+section.carrusel img {
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+
+@media only screen and (max-width: 991px) {
+  section.carrusel img {
+    -webkit-filter: brightness(0.9);
+            filter: brightness(0.9);
+  }
+}
+
+section.cards h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 0px;
+  font-size: 34px;
+  color: #28a745;
+}
+
+@media only screen and (max-width: 991px) {
+  section.cards h1 {
+    font-size: 24px;
+  }
+}
+
+section.cards h1 span {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 991px) {
+  section.cards h1 span {
+    display: block;
+    font-size: 28px;
+  }
+}
+
+section.cards .card {
+  margin-bottom: 2rem;
+}
+
+section.cards .card a {
+  color: unset;
+  text-decoration: unset;
+}
+
+section.cards .card .card-body {
+  padding-bottom: 0px;
+}
+
+section.cards .card .card-body hr {
+  margin-top: 2rem;
+}
+
+section.cards .card .list-group.list-group-flush {
+  display: none;
+}
+
+section.cards .card .card-footer {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: none;
+}
+
+section.cards .card .card-footer span {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+section.cards .card .card-footer span:last-child {
+  color: #28a745;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+section.form .text-form h2 {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 991px) {
+  section.form .text-form h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+section.form form {
+  background-color: #28a745;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  section.form form {
+    padding: 1rem;
+  }
+}
+
+section.form form .box-input {
+  margin-bottom: 1.5rem;
+}
+
+section.form form .box-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.form form .box-submit .btn-cupon {
+  color: #fff;
+  border-color: #000;
+  background-color: #000;
+  min-width: 150px;
+}
+
+section.form form .box-submit .btn-cupon:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+footer {
+  background-color: #28a745;
+  padding: 1rem 0rem;
+  color: #fff;
+}
+
+footer p {
+  margin-bottom: 0px;
+}
+
+footer figure {
+  margin-bottom: 0px;
+}
+
+footer figure img {
+  max-width: 150px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=styles.css.map */
